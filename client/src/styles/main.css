@@ -1,0 +1,56 @@
+.mt-100{
+    margin-top : 100px;
+}
+
+.title {
+    font-size: 80px;
+    text-align: start;
+    /* text-shadow: 0 0 10px white; */
+    stroke: white;
+}
+
+.desc{
+    font-size: 21px;
+}
+
+.circle-background{
+    width: 0%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    height: 100vh;
+    background-color: #A2D2FF;
+    position: absolute;
+    right: 0;
+    top :0;
+    animation-name : background-circle;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards; 
+    z-index: -1;
+}
+
+.card-container{
+    box-shadow: 0 0 2px 10px #181823;
+}
+
+.link-footer{
+    color : #3A98B9;
+    cursor: pointer;
+}
+
+
+
+
+  .link-footer:hover, .link-footer:active{
+    opacity: 0.7;
+  }  
+
+
+@keyframes background-circle {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
